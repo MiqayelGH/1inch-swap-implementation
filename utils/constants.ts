@@ -38,3 +38,23 @@ export const ROUTER_ADDRESSES_1INCH = {
   [ChainId.OPTIMISM]: default1InchRouterAddress,
   [ChainId.BSC]: default1InchRouterAddress,
 }
+
+export interface NetworkOption {
+  value: string;
+  label: string;
+}
+
+export const networkOptions: NetworkOption[] = [
+  { value: 'ETHEREUM', label: 'Ethereum' },
+  { value: 'AVALANCHE', label: 'Avalanche' },
+  { value: 'ARBITRUM', label: 'Arbitrum' },
+  { value: 'AURORA', label: 'Aurora' },
+  { value: 'BASE', label: 'Base' },
+  { value: 'BINANCE', label: 'Binance' },
+  { value: 'ZKSYNC', label: 'ZkSync' },
+  { value: 'FANTOM', label: 'Fantom' },
+  { value: 'GNOSIS', label: 'Gnosis' },
+  { value: 'KLAYTN', label: 'Klaytn' },
+  { value: 'OPTIMISM', label: 'Optimism' },
+  { value: 'POLYGON', label: 'Polygon' },
+];

@@ -11,6 +11,7 @@ import { useWeb3React } from "@web3-react/core";
 export const useSwap1Inch = () => {
   const chainId = 1;
   const { account, library } = useWeb3React();
+  console.log(account, library)
   const typedValue = 1; // TO DO: get from input
   const router1Inch = ROUTER_ADDRESSES_1INCH[chainId];
 
